@@ -4,32 +4,30 @@ using namespace std;
 
 int removeDublicates(vector<int>& nums)
 {
-    vector<int>::iterator it1,it2;
-    if(!nums.empty())
+    vector<int>::iterator it;
+    int temp=nums[0];
+    it=nums.begin()+1;
+    while(it!=nums.end())
     {
-        for(it1=nums.begin();it1!=nums.end();it1++)
+        if(*it!=temp)
         {
-            for(it2=it1+1;it2!=nums.end();it2++)
-            {
-                if(*it1==*it2)
-                {
-                    nums.erase(it2);
-                }
-            }
+            temp=*it;
+            it++;
         }
+        else
+            it=nums.erase(it);
     }
     return nums.size();
 }
 
 int main()
 {
-    vector<int>v1={1,1,1,2,2,3,3,4,4,5,5,5};
+    vector<int>v1={1,1,1,2,2,2,3,3,4,4,5,5,5};
     int size=removeDublicates(v1);
 
-    vector<int>::iterator it;
-    for(it=v1.begin();it!=v1.end();it++)
+    for(auto x:v1)
     {
-        cout<<" "<<*it;
+        cout<<x<<" ";
     }
     return 0;
 }

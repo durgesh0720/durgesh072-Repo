@@ -55,7 +55,7 @@ string sortVowels(string s)
 }
 int main()
 {
-    string s;
+    string s="Ram is going to home";
     cout<<sortVowels(s);
     return 0;
 }

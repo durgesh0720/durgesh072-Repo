@@ -12,3 +12,8 @@ void TOH(int n,char beg,char aux,char end)
         TOH(n-1,aux,beg,end);
     }
 }
+int main()
+{
+    TOH(3,'A','B','C');
+    return 0;
+}

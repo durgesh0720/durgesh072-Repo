@@ -3,6 +3,7 @@
     "files.associations": {
         "iostream": "cpp",
         "string": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "using namespace std;": "cpp"
     }
 }

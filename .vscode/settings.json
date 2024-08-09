@@ -4,7 +4,8 @@
         "iostream": "cpp",
         "string": "cpp",
         "array": "cpp",
-        "using namespace std;": "cpp"
+        "using namespace std;": "cpp",
+        "new": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe"
 }
